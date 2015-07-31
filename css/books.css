@@ -1,0 +1,28 @@
+h1 {
+    font: 42px/1 Georgia, serif;
+    font-size: 42px;
+    margin-left: 35px;
+    margin-bottom: 35px;
+}
+h2 {
+    margin:-10px 35px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#breadcrumbs {
+    font-size:13px;
+    color: #aaa;
+    margin-top: 15px;
+    margin-bottom:2px;
+    margin-left: 35px;
+
+}
+#breadcrumbs ul li {
+    display: inline-block;
+    margin: 0 3px;
+}
+#breadcrumbs a {
+    font-size:13px;
+    color: #aaa;
+    border-bottom: 1px solid #ededed;
+}

@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Disallow: */search
+Sitemap: http://yprst.ru/sitemap.xml

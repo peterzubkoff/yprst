@@ -1,0 +1,10 @@
+{
+	"version": "6",
+	"api_version": 3,
+
+	"layout": {
+		"logo": "http://yprst.ru/img/logo.png",
+		"color": "#ffffff",
+		"show_title": "none"
+	}
+}

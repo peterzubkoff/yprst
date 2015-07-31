@@ -1,0 +1,326 @@
+body {
+    background-color: #282829;
+    font: 14px/1.5 Arial,sans-serif;
+}
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-top: 4px solid #f00;
+    min-height: 600px;
+    -webkit-box-shadow: 0px 0px 8px 1px #111;
+    -moz-box-shadow: 0px 0px 8px 1px #111;
+    box-shadow: 0px 0px 8px 1px #111;
+    padding-bottom:75px;
+    background: #dee0e3;
+    background: -moz-linear-gradient(top,  #dee0e3 0%, #ffffff 10%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dee0e3), color-stop(10%,#ffffff));
+    background: -webkit-linear-gradient(top,  #dee0e3 0%,#ffffff 10%);
+    background: -o-linear-gradient(top,  #dee0e3 0%,#ffffff 10%);
+    background: -ms-linear-gradient(top,  #dee0e3 0%,#ffffff 10%);
+    background: linear-gradient(to bottom,  #dee0e3 0%,#ffffff 10%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee0e3', endColorstr='#ffffff',GradientType=0 );
+
+
+}
+footer {
+    width: 1010px;
+    height: 100px;
+    background-color: #282829;
+    margin: auto;
+}
+footer:before {
+    content:"";
+    display:block;
+    position: relative;
+    top: -10px;
+    height:12px;
+    background: linear-gradient( 45deg, #282829 50%, transparent 55%) 0 0,
+                linear-gradient(-45deg, #282829 50%, transparent 55%) 0 0;
+    background-repeat: repeat-x;
+    background-size:10px 10px, 10px 10px;
+}
+#footer_copy {
+    font-size:11px;
+    color:#555;
+    margin: 0 25px;
+    float:left;
+    display:inline-block;
+    line-height:1.3;
+}
+#footer_copy a {
+    display: inline-block;
+    margin-top: 10px;
+}
+#footer_copy span {
+    color: #345cad;
+}
+#donate {
+    float:right;
+    display:inline-block;
+    margin-right:25px;
+}
+header {
+    height: 75px;
+    overflow: hidden;
+    padding: 15px 0 10px 35px;
+}
+header nav {
+    width: 550px;
+    line-height: 2;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 18px;
+}
+header nav ul li a {
+    color: #0042b0;
+    border-bottom: 1px solid rgba(0,66,176,.35);
+}
+/*header nav ul li a span {
+    position: absolute;
+    margin-left: -5px;
+    font-size:9px;
+    color: #fff;
+    background-color: #f00;
+    line-height: 1;
+    padding: 1px 2px;
+    border-radius: 2px;
+    font-weight: normal;
+}*/
+header form {
+    float: right;
+    margin-right: 16px;
+    margin-top: 6px;
+}
+header input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    width: 275px; height: 29px;
+    line-height: 100%;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+    padding: 0 6px 0 25px;
+    font-size: 14px;
+    background: #fff url(../img/search.png) 7px 7px no-repeat;
+    background-size: 13px;
+    
+    -webkit-box-shadow: inset 0 1px 2px 0 rgba(64, 64, 64, .25);
+    box-shadow: inset 0 1px 2px 0 rgba(64, 64, 64, .25);
+
+    -webkit-transition: all .15s ease-out;
+       -moz-transition: all .15s ease-out;
+        -ms-transition: all .15s ease-out;
+         -o-transition: all .15s ease-out;
+            transition: all .15s ease-out;
+}
+header input:focus {
+    width: 315px;
+    border-color:red;
+    -webkit-box-shadow: inset 0 1px 2px 0 rgba(64, 64, 64, .25),
+                        0 0 6px rgba(255, 10, 10, .25);;
+    box-shadow: inset 0 1px 2px 0px rgba(64, 64, 64, .25),
+                0 0 6px rgba(255, 10, 10, .25);
+}
+header button {
+    display: inline-block;
+    width:38px; height:29px;
+    line-height:20px;
+    vertical-align: top;
+    border:0;
+    background: transparent url(../img/enter.png) 4px 8px no-repeat;
+    cursor: pointer;
+}
+/*button {
+    display: block;
+    font-size: 16px;
+    padding: 7px 20px;
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+background: #f2f5f6;
+background: -moz-linear-gradient(top,  #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f5f6), color-stop(37%,#e3eaed), color-stop(100%,#c8d7dc));
+background: -webkit-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+background: -o-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+background: -ms-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+background: linear-gradient(to bottom,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 );
+
+    box-shadow: 0 1px 4px 1px rgba(99, 99, 99, 0.2);
+    color: #000;
+    cursor: pointer;
+    text-shadow: none;
+}
+*/
+header .email,
+#logo {
+    display: inline-block;
+}
+#logo {
+    float: left;
+    margin-bottom: 12px;
+}
+#logo {
+    width: 139px; height: 49px;
+    /*background-image: url(../img/logo.png);*/
+    margin-top: -4px;
+    margin-right: 18px;
+}
+a[href^="mailto"] {
+    color: #345cad;
+    border-bottom: 1px solid rgba(52,92,173,.4);
+}
+#head {
+    width: 930px;
+    height: 155px;
+    clear: both;
+    border-bottom: 1px solid #d7dce0;
+    border-radius: 2px;
+    margin: 12px auto 35px;
+
+    box-shadow: inset 0px 2px 5px #8e959b;
+    background-image: -webkit-linear-gradient(bottom, rgb(237,242,248) 0%, rgb(227,230,234) 92%, rgb(223,226,229) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(237,242,248) 0%, rgb(227,230,234) 92%, rgb(223,226,229) 100%);
+    background-image: linear-gradient(to top, rgb(237,242,248) 0%, rgb(227,230,234) 92%, rgb(223,226,229) 100%);
+}
+#head h1 {
+    padding-top: 25px;
+    font: 32px "Georgia",Times,serif;
+    background: url(../img/selected.png) 190px 31px no-repeat;
+}
+#head h2 {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #6f757e;
+}
+#head h1,
+#head h2 {
+    text-align: center;
+}
+#head .pdf {
+    font-size: 28px;
+    letter-spacing: .09em;
+    padding: 0 6px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #df171e;
+}
+
+/* Grid */
+main {
+    position:relative;
+    overflow:hidden;
+}
+.grid li,
+#book_of_the_day li {
+    width: 140px;
+    font: 15px/1.45 Arial,sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    margin:0 32px 65px 0;
+}
+.grid li a,
+#book_of_the_day li a {
+    color:#008CD5;
+    border-bottom: solid 1px rgba(43, 121, 217, 0.3);
+    text-decoration:none;
+}
+.grid li a:hover,
+#book_of_the_day li a:hover {
+    color:#e41a00;
+    border-color:rgba(228,26,0,0.2);
+}
+.grid li small,
+#book_of_the_day li small {
+    display: block;
+}
+.grid li small a,
+#book_of_the_day li small a {
+    color:#666;
+    border-bottom: 1px solid #ddd;
+    font-size:13px;
+    line-height:2.2;
+}
+.grid li small a:hover,
+#book_of_the_day li small a:hover {
+    color: #666;
+    border-bottom-color:#666;
+}
+.grid li img,
+#book_of_the_day li img {
+     display:block;
+     width: 100px; height: 135px;
+    background-color: #eee;
+    margin-bottom: 8px
+}
+.grid {
+    width: 700px;
+    margin-left:35px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#book_of_the_day {
+    border:1px solid #FFD3CE;
+    width:210px; height:340px;
+    border-radius:3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 12px 11px;
+}
+#book_of_the_day li {
+    padding-left: 30px;
+}
+#book_of_the_day h4 {
+    font-size:11px;
+    letter-spacing:0.12em;
+    color: #FC0000;
+    margin-bottom: 45px;
+}
+#vk_groups {
+    margin: 25px 0 25px;
+}
+aside {
+    position: absolute;
+    top: 42px; right: 35px;
+    width: 210px;
+    /*overflow: hidden;*/
+}
+.pluso-wrap a {
+    border:0 !important;
+}
+.social-likes {
+    width: 548px !important;
+    margin: 20px auto !important;
+    position: relative;
+    display: block !important;
+}
+/* Rating */
+.rating {
+    position: absolute;
+    top: auto;
+    display: inline-block;
+    width: 75px; height: 14px;
+    margin: .4em 0 0 8px;
+    background: url(../img/stars.png) 0 -14px;
+}
+.rating_inner {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    height: 14px;
+    margin: 0;
+    background: url(../img/stars.png) 0 0;
+    text-indent: -9999em;
+}
+.grid .rating {
+    margin-left: 0;
+    margin-top: 3px;
+}
